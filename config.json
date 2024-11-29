@@ -1,0 +1,29 @@
+{
+  "app": {
+    "name": "ABAN TETHER",
+    "debug": true
+  },
+  "database": {
+    "url": "postgresql://postgres:test@db:5432/postgres"
+  },
+  "redis": {
+    "host": "redis",
+    "port": 6379,
+    "db": 0
+  },
+  "jobs": {
+    "name": "settlement",
+    "enable": false,
+    "crone_expression": "*/1 * * * *",
+    "offset": 0,
+    "limit": 50
+  },
+  "oauth2": {
+    "SECRET_KEY": "6c7d438d2ea66cc11ee315566bda6f45336930dc2a40eaa96ec009524c20aa69",
+    "ALGORITHM": "HS256",
+    "ACCESS_TOKEN_EXPIRE_MINUTES": 30
+  },
+  "order_amount": {
+    "limit_for_exchange": 10
+  }
+}
